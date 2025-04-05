@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#1f1e1e;;
+        }
+        
+        .welcome-text {
+            text-align: center;
+            font-size: 60px;
+            margin-top: 20px;
+            color: rgb(224, 224, 224);
+            background-color:#1f1e1e;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: aquamarine;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* Contenedor de las imágenes */
+        .banner-container {
+            width: 100%;
+            display: flex; /* Usamos Flexbox para alinear las imágenes horizontalmente */
+            justify-content: space-around; /* Espaciado entre las imágenes */
+            margin-top: 20px;
+            flex-wrap: wrap; /* Para que se ajusten si el espacio es reducido */
+            background-color:#1f1e1e;
+        }
+
+        /* Contenedor de cada imagen */
+        .banner-imagenes {
+            background-color: #dbdbdb;
+            padding: 20px;
+            margin: 10px; /* Espaciado entre los cuadros */
+            border: 2px solid #ddd; /* Añade un borde gris claro */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            width: 250px; /* Puedes ajustar el tamaño */
+            text-align: center;
+        }
+
+        .banner-imagenes img {
+            width: 100%; /* La imagen ocupa todo el espacio del contenedor */
+            border-radius: 8px;
+            transition: transform 0.5s ease-in-out; /* Transición para el zoom */
+
+        }
+
+        .banner-imagenes img:hover {
+            transform: scale(1.2); /* Aumenta el tamaño de la imagen al 50% */
+        }
+
+        .banner-imagenes h3 {
+            margin: 10px 0;
+        }
+
+        .banner-imagenes p {
+            color: black;
+        }
+        .volver-inicio{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .volver-inicio a{
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: green;
+            border-radius:8px;
+            transition: background-color 0.3s;
+        }
+
+        .volver-inicio a:hover{
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="welcome-text">Accesorios</div>
+    <header>
+        <!-- Contenedor para las imágenes horizontales -->
+        <section class="Tienda">
+            <!-- Primera fila -->
+            <div class="banner-container">
+                <div class="banner-imagenes">
+                    <img src="picture/1.jpg" alt="Ropa 1"> 
+                    <h3>Nike Pro Hyperwarm</h3>
+                    <p>Otros Fútbol Hombre Mujer</p>
+                    <p><strong>S/169.00</strong></p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="picture/2.jpg" alt="Ropa 2">
+                    <h3>Nike Swoosh Headband</h3>
+                    <p>Otros Tenis Hombre Mujer</p>
+                    <p><strong>S/39.90</strong></p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="picture/3.jpg" alt="Ropa3">
+                    <h3>Jordan Wristbands Jumpman</h3>
+                    <p>Medicinales Básquet Hombre Mujer</p>
+                    <p><strong>S/69.90</strong></p>   
+                </div>
+            </div>
+
+            <!-- Segunda fila -->
+            <div class="banner-container">
+                <div class="banner-imagenes">
+                    <img src="picture/4.jpg" alt="Ropa4">
+                    <h3>Nike Pro</h3>
+                    <p>Rodillera de entrenamiento</p>
+                    <p>S/139.90</p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="picture/5.webp" alt="Ropa5">
+                    <h3>Nike Phantom</h3>
+                    <p>Pelota de fútbol</p>
+                    <p>S/79.90</p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="picture/6.webp" alt="Ropa6">
+                    <h3>Nike J</h3>
+                    <p>Canilleras de fútbol</p>
+                    <p>S/49.90</p>
+                </div>
+            </div>
+
+            <!-- Tercera fila -->
+            <div class="banner-container">
+                <div class="banner-imagenes">
+                    <img src="picture/7.webp" alt="Ropa7">
+                    <h3>Nike Extreme Fitness</h3>
+                    <p>Guantes de entrenamiento para hombre</p>
+                    <p>S/71.94</p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="picture/8.webp" alt="Ropa7">
+                    <h3>Nike Gym Club</h3>
+                    <p>Maletin de entrenamiento</p>
+                    <p>S/199.99</p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="picture/9.webp" alt="Ropa7">
+                    <h3>Nike Ss Recharge</h3>
+                    <p>Tomatodo para entrenamiento</p>
+                    <p>S/ 169.90</p>
+                </div>
+            </div>
+        </section>
+    </header>
+    <div class="volver-inicio">
+        <a href="index.html">Volver-inicio</a>
+    </div>
+</body>
+</html>

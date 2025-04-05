@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patalones</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        
+        .welcome-text {
+            text-align: center;
+            font-size: 60px;
+            margin-top: 20px;
+            color: black;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: aquamarine;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* Contenedor de las imágenes */
+        .banner-container {
+            width: 100%;
+            display: flex; /* Usamos Flexbox para alinear las imágenes horizontalmente */
+            justify-content: space-around; /* Espaciado entre las imágenes */
+            margin-top: 20px;
+            flex-wrap: wrap; /* Para que se ajusten si el espacio es reducido */
+        }
+
+        /* Contenedor de cada imagen */
+        .banner-imagenes {
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 10px; /* Espaciado entre los cuadros */
+            border: 2px solid #ddd; /* Añade un borde gris claro */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            width: 250px; /* Puedes ajustar el tamaño */
+            text-align: center;
+        }
+
+        .banner-imagenes img {
+            width: 100%; /* La imagen ocupa todo el espacio del contenedor */
+            border-radius: 8px;
+            transition: transform 0.5s ease-in-out; /* Transición para el zoom */
+        }
+
+        .banner-imagenes img:hover {
+            transform: scale(1.2); /* Aumenta el tamaño de la imagen al 50% */
+        }
+
+        .banner-imagenes h3 {
+            margin: 10px 0;
+        }
+
+        .banner-imagenes p {
+            color: black;
+        }
+
+        .volver-inicio{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .volver-inicio a{
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: green;
+            border-radius:8px;
+            transition: background-color 0.3s;
+        }
+
+        .volver-inicio a:hover{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="welcome-text">Pantalones</div>
+    <header>
+        <!-- Contenedor para las imágenes horizontales -->
+        <section class="Tienda">
+            <!-- Primera fila -->
+            <div class="banner-container">
+                <div class="banner-imagenes">
+                    <img src="pantalones/pantalon nike4.jpg" alt="Ropa 1"> 
+                    <h3>Pantalon Nike</h3>
+                    <p>Conjunto de Pantalones Nike</p>
+                    <p><strong>S/18.90 </strong></p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="pantalones/nuevo pantalon.jpg" alt="Ropa 2">
+                    <h3>Pantalones</h3>
+                    <p>Pantalones Nike</p>
+                    <p><strong>S/25.00</strong></p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="pantalones/pantalon9.jpg" alt="Ropa3">
+                    <h3>Pantalones Nike</h3>
+                    <p>Pantalones Nike</p>
+                    <p><strong>S/20.90</strong></p>   
+                </div>
+            </div>
+
+            <!-- Segunda fila -->
+            <div class="banner-container">
+                <div class="banner-imagenes">
+                    <img src="pantalones/pantalon nike 1.jpg" alt="Ropa4">
+                    <h3>Pantalon Nike</h3>
+                    <p>Pantalon Nike</p>
+                    <p>S/28.90</p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="pantalones/pantalon nike 2.jpg" alt="Ropa5">
+                    <h3>Pantalon Nike</h3>
+                    <p>pantalon Nike</p>
+                    <p>S/32.90</p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="pantalones/pantalon nike3.jpg" alt="Ropa6">
+                    <h3>Pantalones Nike</h3>
+                    <p>Pantalon Nike</p>
+                    <p>S/30.00</p>
+                </div>
+            </div>
+
+            <!-- Tercera fila -->
+            <div class="banner-container">
+                <div class="banner-imagenes">
+                    <img src="pantalones/pantalon7.jpg" alt="Ropa7">
+                    <h3>Pantalon Nike</h3>
+                    <p>Pantalon Nike</p>
+                    <p>S/20.00</p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="pantalones/pantalon nike4.jpg" alt="Ropa7">
+                    <h3>Pantalon Nike</h3>
+                    <p>Pantalon Nike Negro</p>
+                    <p>S/19.90</p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="pantalones/pantalon nike 1.jpg" alt="Ropa7">
+                    <h3>Pantalon Nike</h3>
+                    <p>Pantalon para este Invierno</p>
+                    <p>S/20.90</p>
+                </div>
+            </div>
+
+        </section>
+    </header>
+    <div class="volver-inicio">
+        <a href="index.html">Volver-inicio</a>
+    </div>
+</body>
+</html>

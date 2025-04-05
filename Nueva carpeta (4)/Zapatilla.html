@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapatillas</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #474444;
+        }
+        
+        .welcome-text {
+            text-align: center;
+            font-size: 60px;
+            margin-top: 20px;
+            color: black;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: aquamarine;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* Contenedor de las imágenes */
+        .banner-container {
+            width: 100%;
+            display: flex; /* Usamos Flexbox para alinear las imágenes horizontalmente */
+            justify-content: space-around; /* Espaciado entre las imágenes */
+            margin-top: 20px;
+            flex-wrap: wrap; /* Para que se ajusten si el espacio es reducido */
+        }
+
+        /* Contenedor de cada imagen */
+        .banner-imagenes {
+            background-color:#838282;
+            padding: 20px;
+            margin: 10px; /* Espaciado entre los cuadros */
+            border: 2px solid #ddd; /* Añade un borde gris claro */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            width: 250px; /* Puedes ajustar el tamaño */
+            text-align: center;
+            
+        }
+
+        .banner-imagenes img {
+            width: 100%; /* La imagen ocupa todo el espacio del contenedor */
+            border-radius: 8px;
+            transition: transform 0.5s ease-in-out; /* Transición para el zoom */
+        }
+
+        .banner-imagenes img:hover {
+            transform: scale(1.2); /* Aumenta el tamaño de la imagen al 50% */
+        }
+
+        .banner-imagenes h3 {
+            margin: 10px 0;
+        }
+
+        .banner-imagenes p {
+            color: black;
+        }
+
+        .volver-inicio{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .volver-inicio a{
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: green;
+            border-radius:8px;
+            transition: background-color 0.3s;
+        }
+
+        .volver-inicio a:hover{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="welcome-text">Zapatilla</div>
+    <header>
+        <!-- Contenedor para las imágenes horizontales -->
+        <section class="Tienda">
+            <!-- Primera fila -->
+            <div class="banner-container">
+                <div class="banner-imagenes">
+                    <img src="picture/Nike.jpg" alt="Ropa 1"> 
+                    <h3>Giannis immortality 4</h3>
+                    <p>Zapatillas de básquetbol para hombre</p>
+                    <p><strong>S/399.90 </strong></p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="picture/total 90.jpg" alt="Ropa 2">
+                    <h3>Superfly 9 Academy mercurial</h3>
+                    <p>Zapatila deportiva</p>
+                    <p><strong>S/399.00</strong></p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="picture/phantom gx 2.jpg" alt="Ropa3">
+                    <h3>Gripknit phantom GX elite</h3>
+                    <p>Zapatila deportiva</p>
+                    <p><strong>S/249.90</strong></p>   
+                </div>
+            </div>
+
+            <!-- Segunda fila -->
+            <div class="banner-container">
+                <div class="banner-imagenes">
+                    <img src="picture/Ja morant.jpg" alt="Ropa4">
+                    <h3>Ja morant 1 Blue</h3>
+                    <p>Zapatilla basquetbol para hombre</p>
+                    <p>S/200.00</p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="picture/Nike precision.jpg" alt="Ropa5">
+                    <h3>Nike precision VI</h3>
+                    <p>Zapatilla basquetbol para hombre</p>
+                    <p>S/249.90</p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="picture/sabrina2.jpg" alt="Ropa6">
+                    <h3>Sabrina 2 Relentless</h3>
+                    <p>Zapatilla basquetbol para hombre</p>
+                    <p>S/500.00</p>
+                </div>
+            </div>
+
+            <!-- Tercera fila -->
+            <div class="banner-container">
+                <div class="banner-imagenes">
+                    <img src="picture/Zoomgt.jpg" alt="Ropa7">
+                    <h3>Zoom G.T cut 3</h3>
+                    <p>Zapatilla basquetbol para hombre</p>
+                    <p>S/300.00</p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="picture/kyrieconcepts.jpg" alt="Ropa7">
+                    <h3>Kyrie 5 Concepts</h3>
+                    <p>Zapatilla basquetbol para hombre</p>
+                    <p>S/450.00</p>
+                </div>
+
+                <div class="banner-imagenes">
+                    <img src="picture/inmortality 3.jpg" alt="Ropa7">
+                    <h3>Giannis inmortality 3</h3>
+                    <p>Zapatilla basquetbol para hombre</p>
+                    <p>S/399.90</p>
+                </div>
+            </div>
+
+        </section>
+    </header>
+    <div class="volver-inicio">
+        <a href="index.html">Volver-inicio</a>
+    </div>
+</body>
+</html>
